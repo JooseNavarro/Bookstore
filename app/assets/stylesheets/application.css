@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+ body{
+   font-family: 'Raleway', sans-serif;
+ }
+ .navbar-default {
+     background-color: rgba(248, 248, 248, 0);
+     border-color: rgba(231, 231, 231, 0);
+ }
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #fff;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    border: 1px solid white;
+    margin: 8px 2px;
+}
+
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#dad{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: black
+}
+#son{
+  height: 100%;width: 100%;
+  background-image: url('/assets/home.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overblack{
+  position: absolute;
+  top: 0;bottom: 0;left: 0;right: 0;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+#home_conten{
+  position: absolute;
+  top: 22%;
+  width: 63%;
+  height: 61%;
+  color: #fff
+}
+#home_conten> #text_home{
+  padding: 15px;
+  position: absolute;
+  bottom: 124px;
+}
